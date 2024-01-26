@@ -1,21 +1,18 @@
 body {
     margin:0;
     padding:0;
-    
-    
-    
-    
-    
 }
+
 .navbar-container{
     background: linear-gradient(to left,#00b4d8, #0077b6, #03045e);
-            grid-area: header;
-    height: 10vh;
-    grid-gap:5px;
+    display: grid;
+    grid-area: header;
+    height: 100px;
+    grid-gap:10px;
     font-size: 1em;
 
-    display: grid;
-    grid-template-columns: repeat(9, 1fr);
+    
+    grid-template-columns: repeat(7, 1fr);
     grid-template-rows: auto;
     align-items: center;
     justify-items: center;
@@ -52,7 +49,7 @@ body {
 .background{
     position: absolute;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     overflow: auto;
 
     background: linear-gradient(90deg, rgb(2, 0,.6) 0%,rgb(3, 3, 162) 35%,cyan 100%);
@@ -62,14 +59,51 @@ body {
     position: absolute;
     top:90px;
     right: 30px;
-    height: 60vh;
+    width: 45%;
+    max-width: 39%;
+}
+.intro{
+ position: relative;
+ bottom: 15vh;
+ color: white;
+ width: 50vw;
+ left: 50px;
+ font-family: 'Azeret Mono', monospace;
+    font-size: 1.75em;
+}
+.ft{
+
+    position: absolute;
+    color: white;
+ width: 50vw;
+ left: 50px;
+ font-family: 'Azeret Mono', monospace;
+    font-size: 1.75em;
+    top: 30%;
+    right: 5px;
+}
+.htext{
+    
+    margin-top: 125px;
+    margin-left:23vw ;
+    width: 50vw;
+    height: 60px;
+ font-size: 3em;
+ font-family: 'Azeret Mono', monospace;
+
+ /* display: block; */
+ background-color: #00eaff;
+ border-radius: 50px;
+ text-align: center;
 }
 .hobbies{
     position: absolute;
     top:100vh;
-    right:30px;
+    right: 30vw;
     
-    width: 60vw;
+
+    
+    /* width: 60%; */
 
 }
 .box div{
@@ -146,7 +180,8 @@ body {
 @media screen and (max-width: 620px) {
     /* For mobile phones: */
     .hello, .rname{
-        transform: translateY(-150px);
+        transform: translateY(-350px) translateX(5px);
+        
     }
     
     
@@ -156,7 +191,7 @@ body {
 display: flex;
 justify-content: left;
 align-items: center;
-height: 70vh;
+height: 50vh;
 font-family: monospace;
 font-weight: bold;
 font-size: 3vw;
@@ -172,6 +207,7 @@ transform: translateX(90px);
 display: inline-flex;
 margin: 0;
 vertical-align: top;
+transform: translateX(-50px);
 }
 
 .rotating-text p .word {
@@ -202,17 +238,98 @@ color: #e74c3c;
 }
 
 .w-2 {
-color: #8e44ad;
+color: #11ff00;
 }
 
 .w-3 {
-color: #3498db;
+color: #ff00e1;
 }
 
 .w-4 {
-color: #28cc71;
+color: yellow;
 }
 
 .w-5 {
-color: #f1c40f;
+color: #00fcfc;
 }
+
+/* contact me */
+.col{
+    font-size: 30px;
+}
+.container{
+    color: orange;
+    display: flex;
+    flex-direction: column;
+justify-content: top;
+align-items: center;
+height: 70vh;
+font-family: monospace;
+font-weight: bold;
+font-size: 2vw;
+margin-top: 10vh;
+}
+
+.form-control{
+    font-size: 30px;
+    width: 50vw;
+    height: 10vh;
+    margin: 30px;
+    border-radius: 100px;
+    padding: 20px;
+background-color: rgba(253, 165, 0, 0.811);
+}
+
+/* res nav */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 17px;   
+    font-family: 'Azeret Mono', monospace;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    margin: 0;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    font-family: 'Azeret Mono', monospace;
+
+    background: linear-gradient(to left,#00b4d8, #0077b6);
+
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .navbar-container a:hover, .dropdown:hover .dropbtn {
+
+    color: #45cb85;
+  }
+  
+  .dropdown-content a:hover {
+    /* background-color: #979797; */
+    color: #45cb85;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+ 

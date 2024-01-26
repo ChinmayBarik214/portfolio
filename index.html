@@ -8,14 +8,24 @@
 </head>
 <body>
     <div class="navbar-container">
-        <div class="nav-item1"></div>
-        <a href="#" class="nav-logo-link"><div class="nav-item2"><img src="logo.png" height=1em  ></div></a>
-        <div class="nav-item3"></div>
-        <a href="#toollink" class="nav-link"><div class="nav-item4">Hobbies</div></a>
-        <a href="https://www.youtube.com/@AnubhayTalks/videos" target="_blank" class="nav-link"><div class="nav-item5">Youtube Channel</div></a>
-        <a href="blog/" class="nav-link"><div class="nav-item6">My Projects</div></a>
-        <a href="https://readabhaysblogs.wordpress.com" target="_blank" class="nav-link"><div class="nav-item7">BlogPost</div></a>
-        <a href="contactme.html" class="nav-link"><div>Contact Me</div></a>
+        <!-- <div class="nav-item1"></div> -->
+        <a href="index.html" class="nav-logo-link"><div class="nav-item2"><img src="logo.png" height=100px  ></div></a>
+        <!-- <div class="nav-item3"></div> -->
+        <div class="dropdown">
+            <button class="dropbtn">Hobbies
+            <i class="fa fa-caret-down"></i>
+              
+            </button>
+            <div class="dropdown-content">
+              <a href="fitness.html">Fitness</a>
+              <a href="books.html">Reading</a>
+              <a href="tabletennis.html">Table Tennis</a>
+            </div>
+          </div> 
+        <a href="https://www.youtube.com/@AnubhayTalks/videos" target="_blank" class="nav-link">Youtube Channel</a>
+        <a href="blog/" class="nav-link">My Projects</a>
+        <a href="https://readabhaysblogs.wordpress.com" target="_blank" class="nav-link">BlogPost</a>
+        <a href="contactme.html" class="nav-link">Contact Me</a>
 
     </div>
 
@@ -37,15 +47,9 @@
         </div>
         <div ><img src="img/myphoto.png" class="myphoto" alt="" ></div>
 
-        <img src="img/hobbies.jpg"  class="hobbies" usemap="#image-map">
+        
 
-      <map name="image-map">
-          <area target="" alt="" title="" href="books.html" coords="248,236,460,464" shape="rect">
-          <area target="" alt="" title="" href="fitness.html" coords="56,109,12,236,42,271,103,247,174,161,260,174,298,132,259,75,158,21,125,13,46,42,30,72,43,94" shape="poly">
-          <area target="" alt="" title="" href="tabletennis.html" coords="421,96,444,135,491,161,526,196,578,199,634,158,574,99,572,54,511,1,446,13,416,49" shape="poly">
-      </map>
-
-      <div class="rotating-text">
+        <div class="rotating-text">
         <p class="hello">Hello! My Name is </p>
         <p class="rname">
           <span class="word w-1" data-locale="en"></span>
@@ -54,7 +58,18 @@
           <span class="word w-4" data-locale="ru"></span>
           <span class="word w-5" data-locale="ko"></span>
         </p>
-    </div>
+        </div>
+        <p class="intro"> Currently in my first year in Chemical Enginnering at IIT Bombay. I love to explore new things, technologies and meet new people. I am currently 18 year old and was born on 26th May 2005. </p>
+        
+        <p class="htext">My Hobbies</p>
+
+        <img src="img/hobbies.jpg"  class="hobbies" usemap="#image-map">
+
+      <map name="image-map">
+          <area href="books.html" coords="248,236,460,464" shape="rect">
+          <area href="fitness.html" coords="56,109,12,236,42,271,103,247,174,161,260,174,298,132,259,75,158,21,125,13,46,42,30,72,43,94" shape="poly">
+          <area href="tabletennis.html" coords="421,96,444,135,491,161,526,196,578,199,634,158,574,99,572,54,511,1,446,13,416,49" shape="poly">
+      </map>
     </div>
 
     
