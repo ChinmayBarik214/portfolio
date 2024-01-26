@@ -56,14 +56,9 @@ body {
 
 }
 .myphoto{
-    position: absolute;
-    top:90px;
-    right: 30px;
-    width: 45%;
-    max-width: 39%;
+    height: 400px;
 }
 .intro{
- position: relative;
  bottom: 15vh;
  color: white;
  width: 50vw;
@@ -167,37 +162,22 @@ body {
     }
 }
 
-@media screen and (max-width: 620px) {
-    /* For mobile phones: */
-    .hello, .rname{
-        transform: translateY(-350px) translateX(5px);
-        
-    }
-    
-    
-}
-
 .rotating-text {
-display: flex;
 justify-content: left;
 align-items: center;
-height: 50vh;
 font-family: monospace;
 font-weight: bold;
 font-size: 3vw;
 color: #fff;
-transform: translateX(90px);
 }
 .hello{
-    position: relative;
-    top: 20px;
-    right: 10px;
+
+/* pass */
 }
 .rotating-text p { /*> ' '*/
 display: inline-flex;
 margin: 0;
 vertical-align: top;
-transform: translateX(-50px);
 }
 
 .rotating-text p .word {
