@@ -48,7 +48,7 @@ body {
 
 .background{
     position: absolute;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     overflow: auto;
 
@@ -95,16 +95,6 @@ body {
  background-color: #00eaff;
  border-radius: 50px;
  text-align: center;
-}
-.hobbies{
-    position: absolute;
-    top:100vh;
-    right: 30vw;
-    
-
-    
-    /* width: 60%; */
-
 }
 .box div{
     position: absolute;
@@ -203,7 +193,7 @@ transform: translateX(90px);
     top: 20px;
     right: 10px;
 }
-.rotating-text p {
+.rotating-text p { /*> ' '*/
 display: inline-flex;
 margin: 0;
 vertical-align: top;
